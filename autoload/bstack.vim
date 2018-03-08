@@ -1,3 +1,8 @@
+if exists("g:loaded_bstack") || v:version < 700 || &cp
+  finish
+endif
+let g:loaded_bstack = 1
+
 func! bstack#quit_window()
   if winnr('$') > 1
     close
