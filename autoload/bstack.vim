@@ -12,10 +12,10 @@ func! bstack#quit_window()
 endf
 
 func! s:switch_buffer_or_quit()
-  let l:alt_bufnr = bufnr('#')
+  let alt_bufnr = bufnr('#')
 
-  if l:alt_bufnr != -1
-    execute 'buffer' l:alt_bufnr
+  if alt_bufnr != -1
+    execute 'buffer' alt_bufnr
   else
     quit
   endif
